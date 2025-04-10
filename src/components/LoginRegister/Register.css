@@ -1,0 +1,221 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 400px 2300px;;
+    position: relative;
+    background-image: url(../../Assets/images/login-bg.jpg);
+
+  }
+  
+  .register-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 150, 0.6) 0%, rgba(0, 0, 150, 0.3) 100%);
+    z-index: 1;
+  }
+  
+  .register-form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .register-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .register-icon .user-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #0a3d7c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-icon .user-icon svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+  }
+  
+  .register-title {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .register-form .input-group {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+  }
+  
+  .register-form .input-icon {
+    color: white;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .register-form .input-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .register-form .input-group input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+  }
+  
+  .register-form .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .role-selector {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .role-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .role-options {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .role-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .role-option.active {
+    background-color: rgba(25, 118, 210, 0.4);
+  }
+  
+  .role-option input {
+    accent-color: #fff;
+  }
+  
+  .role-option label {
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  
+  .register-button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .register-button:hover {
+    background-color: #004080;
+  }
+  
+  .register-button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  .login-link {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .success-message {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  @media (max-width: 480px) {
+    .register-form-wrapper {
+      padding: 30px 20px;
+    }
+    
+    .register-title {
+      font-size: 20px;
+    }
+    
+    .role-options {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
