@@ -5,30 +5,33 @@ import Contact from "./components/Contact";
 import Inventory from "./components/Inventory";
 import Details from "./components/details";
 import About from "./components/About";
-import "./App.css";
 import LoginRegister from './components/LoginRegister/LoginRegister';
 import Register from './components/LoginRegister/Register';
+// importi path bil s7i7 dossier ismo components miniscule !!
+import "./App.css";
 
 function App() {
   //
-  
-  const [ openAdvSch, setOpenAdvSch ] = useState(false);
+
+  const [openAdvSch, setOpenAdvSch] = useState(false);
   // console.log(openAdvSch)
   return (
-    <WholeContext.Provider value={{openAdvSch, setOpenAdvSch}}>
-    <BrowserRouter>
-      <Switch>
-        <Route exact component={Home} path='/' />
-        <Route exact component={Contact} path='/contact' />
-        <Route exact component={Inventory} path='/inventory' />
-        <Route exact component={About} path='/about' />
-        <Route exact path='/cars/:id' > <Details /></Route>
-        {/*<Route exact path="/login" element={<LoginRegister />} />
-        <Route exact path="/Register" element={<Register />} />*/}
+    <WholeContext.Provider value={{ openAdvSch, setOpenAdvSch }}>
+      <BrowserRouter>
+        <Switch>
+          <Route exact component={Home} path='/' />
+          <Route exact component={Contact} path='/contact' />
+          <Route exact component={Inventory} path='/inventory' />
+          <Route exact component={About} path='/about' />
+          <Route exact path='/cars/:id' component={Details} />
+          <Route exact component={LoginRegister} path="/login" />
+          <Route exact component={Register} path="/register" />
+          // syntax 8alta houni
 
-        
-      </Switch>
-    </BrowserRouter>
+
+
+        </Switch>
+      </BrowserRouter>
     </WholeContext.Provider>
   );
 }
