@@ -101,7 +101,7 @@ function CheckOut() {
                   align="center"
                   color="textPrimary">
                   <Box fontWeight={1000} style={{ padding: "0px 0px 30px" }} >
-                     Check out Oxus Car Care
+                     Check out AutoVaul Car Care
                   </Box>
                </Typography>
          <Slider {...settings} style={{height: "auto"}}>

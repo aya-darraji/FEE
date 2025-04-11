@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+{/*import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css';
 import registerImage from '../../assets/images/login-bg.jpg';
@@ -248,4 +248,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Register;*/}

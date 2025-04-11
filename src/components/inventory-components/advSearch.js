@@ -477,7 +477,7 @@ let cancelToken
                                     <Grid item p={2} sm={4} >
                                         <div className={classes.rootSlider}>
                                         <Typography id="range-slider" gutterBottom>
-                                            Days on Oxus<Typography variant="body2" color="textSecondary">
+                                            Days on AutoVaul<Typography variant="body2" color="textSecondary">
                                                 (0 Days to 200 Days)
                                             </Typography>
                                         </Typography>
