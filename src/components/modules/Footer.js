@@ -17,8 +17,8 @@ export default function Footer() {
     <Container maxWidth="lg">
      <Typography>
       <Grid container spacing={10}>
-       <Grid item xs={12} sm={2}>
-        <img src={logo} alt={logo} />
+       <Grid item xs={1.5} sm={2}>
+        <img src={logo} alt="OXUS" height="80" />
        </Grid>
        <Grid item xs={12} sm={3}>
         <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" mb={2}>
@@ -115,7 +115,7 @@ export default function Footer() {
      </Typography>
      <Divider />
      <Box textAlign="center" pt={{ xs: 2, sm: 2 }} pb={{ xs: 2, sm: 2 }}>
-      ©{new Date().getFullYear()} Oxus Motors. All Rights Reserved.
+      ©{new Date().getFullYear()} AutoVault. All Rights Reserved.
      </Box>
     </Container>
    </Box>

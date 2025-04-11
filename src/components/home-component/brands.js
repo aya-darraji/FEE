@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import './brand.css';
 import _ from 'lodash';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
+
 import {
   Box,
   Typography,
@@ -93,7 +94,7 @@ export default function Brands() {
         {logoList.map((item) => (
           <div id='paper' key={uuidv4()}>
             {/* <Paper className={classes.Paper} elevation={7} > */}
-              <img src={item} alt="abc" />
+              <img src="../../assets/images/login-bg.jpg "alt="abc" />
             {/* </Paper> */}
           </div>
         ))}
