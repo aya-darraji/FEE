@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css';
-import registerImage from '../../Assets/images/login-bg.jpg';
+import registerImage from '../../assets/images/login-bg.jpg';
 
 const Register = () => {
   const [formData, setFormData] = useState({

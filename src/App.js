@@ -6,11 +6,11 @@ import Inventory from "./components/Inventory";
 import Details from "./components/details";
 import About from "./components/About";
 import "./App.css";
-export const WholeContext = createContext({});
-import LoginRegister from './Components/LoginRegister/LoginRegister';
-import Register from './Components/LoginRegister/Register';
+import LoginRegister from './components/LoginRegister/LoginRegister';
+import Register from './components/LoginRegister/Register';
 
 function App() {
+  //
   
   const [ openAdvSch, setOpenAdvSch ] = useState(false);
   // console.log(openAdvSch)
@@ -37,3 +37,4 @@ function App() {
 }
 
 export default App;
+export const WholeContext = createContext({});

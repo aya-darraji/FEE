@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginRegister.css';
-import loginImage from '../../Assets/images/login-bg.jpg';
-
+import loginImage from '../../assets/images/login-bg.jpg';
 
 const LoginRegister = () => {
   const [email, setEmail] = useState('');
