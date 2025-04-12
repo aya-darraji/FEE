@@ -18,6 +18,10 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 
 
+
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -78,12 +82,13 @@ export default function Brands() {
     };
 
   let logoList1 = [];
-  for (var i=0; i < 21; i++) {
-    logoList1.push(`https://robohash.org/${i}?100*100`)
+  for (var i=21; i < 43; i++) {
+    logoList1.push(`${i}.webp`)
   }
-  let logoList = [];
-  for (i=21; i < 42; i++) {
-    logoList.push(`https://robohash.org/${i}?100*100`)
+  let logoList = [
+  ];
+  for (i=1; i < 20; i++) {
+    logoList.push(`${i}.webp`)
   }
 
   return(
@@ -91,10 +96,12 @@ export default function Brands() {
       <Slider {...settings} 
       // style={(matches)? {marginBottom:"0px"}:{marginRight: "0px"}}
       >
-        {logoList.map((item) => (
-          <div id='paper' key={uuidv4()}>
+        {logoList.map((fileName) => (
+          <div  key={uuidv4()}>
             {/* <Paper className={classes.Paper} elevation={7} > */}
-              <img src="../../assets/images/login-bg.jpg "alt="abc" />
+            <img src={`/assets/carsLogo/${fileName}`} alt={fileName} />
+
+
             {/* </Paper> */}
           </div>
         ))}
@@ -102,10 +109,10 @@ export default function Brands() {
       <Slider {...settings} 
       // style={(matches)?{marginTop:"0px"}:{marginLeft: "0px", marginTop:"-85px"}}
       >
-        {logoList1.map((item) => (
-          <div  id='paper' key={uuidv4()}>
+        {logoList1.map((fileName) => (
+          <div   key={uuidv4()}>
             {/* <Paper className={classes.Paper} elevation={7} > */}
-              <img src={item} alt="abc" />
+            <img src={`/assets/carsLogo/${fileName}`} alt={fileName} />
             {/* </Paper> */}
           </div>
         ))}
