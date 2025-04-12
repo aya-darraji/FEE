@@ -266,6 +266,8 @@ export default function Navbar() {
               <NavLink className={classes.navmenu} to="/About"> About </NavLink>
               <NavLink className={classes.navmenu} to="/Contact"> Contact </NavLink>
               <NavLink className={classes.navmenu} to="/agency-services"> Agency Services </NavLink>
+              <NavLink className={classes.navmenu} to="/security">My Account </NavLink>
+
               <NavLink className={`${classes.navmenu} ${classes.loginButton}`} to="/login"> Login </NavLink>
               <Button className={classes.navmenu} onClick={() => setOpenCare(true)}> AutoVault Car Care </Button>
               <NavLink className={classes.navmenu} to="/Inventory"> <SearchIcon /> </NavLink>

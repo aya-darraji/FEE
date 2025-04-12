@@ -82,7 +82,7 @@ export default function Brands() {
     };
 
   let logoList1 = [];
-  for (var i=21; i < 43; i++) {
+  for (var i=21; i < 42; i++) {
     logoList1.push(`${i}.webp`)
   }
   let logoList = [
