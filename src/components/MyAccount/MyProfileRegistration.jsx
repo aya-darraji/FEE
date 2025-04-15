@@ -1,15 +1,30 @@
 import React, { useState } from 'react';
-import './Security.css'; // Assurez-vous de créer ce fichier CSS
+import './MyProfileRegistration.css';
 import '../../assets/images/login-bg.jpg';
 
-function Security() {
-  const [oldPassword, setOldPassword] = useState('');
-  const [newPassword, setNewPassword] = useState('');
-  const [repeatPassword, setRepeatPassword] = useState('');
+function MyProfileRegistration() {
+  const [passwordData, setPasswordData] = useState({
+    oldPassword: '',
+    newPassword: '',
+    repeatPassword: ''
+  });
+
+  const handlePasswordChange = (e) => {
+    const { name, value } = e.target;
+    setPasswordData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handlePasswordSubmit = (e) => {
+    e.preventDefault();
+    console.log('Password form submitted:', passwordData);
+  };
 
   return (
-    <div className="security-container">
-      {/* Sidebar */}
+    <div className="profile-registration-container">
+      {/* Sidebar simplifiée comme dans la capture d'écran */}
       <div className="sidebar">
         <div className="logo-container">
           <div className="logo-image">
@@ -21,11 +36,10 @@ function Security() {
           <button className="menu-item">Dashboard</button>
           <button className="menu-item">My Favorites</button>
           <button className="menu-item">My Alerts</button>
-          <button className="menu-item">My Profile</button>
-          <button className="menu-item active">Security</button>
+          <button className="menu-item active">My Profile</button>
+          <button className="menu-item">Security</button>
           <button className="menu-item">Code QR</button>
         </div>
-        
         <div className="bottom-menu">
           <div className="bottom-menu-item">
             <svg className="bottom-icon" fill="currentColor" viewBox="0 0 20 20">
@@ -42,7 +56,6 @@ function Security() {
       <div className="main-content">
         <div className="top-navbar">
           <div className="navbar-icons">
-            
             <button className="navbar-icon">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
@@ -53,48 +66,49 @@ function Security() {
               <span className="username">Username</span>
             </div>
           </div>
-        </div>
+        </div>       
 
         {/* Password change form */}
-        <div className="password-form">
-          <div className="form-fields">
-            <div className="form-field">
+        <div className="password-section">
+          <h2 className="section-title">Change Password</h2>
+          <form className="password-form" onSubmit={handlePasswordSubmit}>
+            <div className="form-group">
               <input
                 type="password"
                 placeholder="Old Password"
-                className="old-password"
-                value={oldPassword}
-                onChange={(e) => setOldPassword(e.target.value)}
+                name="oldPassword"
+                value={passwordData.oldPassword}
+                onChange={handlePasswordChange}
               />
             </div>
-            <div className="form-field">
+            <div className="form-group">
               <input
                 type="password"
                 placeholder="New Password"
-                className="new-password"
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
+                name="newPassword"
+                value={passwordData.newPassword}
+                onChange={handlePasswordChange}
               />
             </div>
-            <div className="form-field">
+            <div className="form-group">
               <input
                 type="password"
-                placeholder="Repeat"
-                className="repeat-password"
-                value={repeatPassword}
-                onChange={(e) => setRepeatPassword(e.target.value)}
+                placeholder="Repeat Password"
+                name="repeatPassword"
+                value={passwordData.repeatPassword}
+                onChange={handlePasswordChange}
               />
             </div>
-          </div>
-          
-          <div className="form-actions">
-            <button className="cancel-button">Cancel</button>
-            <button className="send-button">Send</button>
-          </div>
+            
+            <div className="form-actions">
+              <button type="button" className="cancel-btn">Cancel</button>
+              <button type="submit" className="submit-btn">Send</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   );
 }
 
-export default Security;
+export default MyProfileRegistration;

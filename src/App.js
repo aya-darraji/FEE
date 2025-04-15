@@ -11,6 +11,9 @@ import Register from './components/LoginRegister/Register';
 import "./App.css";
 import Security from './components/MyAccount/Security';
 import MyAlerts from "./components/MyAccount/MyAlerts";
+import DashboardRegistration from "./components/MyAccount/DashboardRegistration";
+import MyFavorites from "./components/MyAccount/MyFavorites";
+import MyProfileRegistration from "./components/MyAccount/MyProfileRegistration";
 
 
 function App() {
@@ -35,8 +38,10 @@ function App() {
 
         
           <Route path={`/myAccount/security`} component={Security} />
-          <Route path={`/myAccount/myAlerts`} component={MyAlerts}/>
-
+          <Route path={`/myAccount/MyAlerts`} component={MyAlerts}/>
+          <Route path={`/myAccount/DashboardRegistration`} component={DashboardRegistration}/> 
+          <Route path={`/myAccount/MyFavorites`} component={MyFavorites}/> 
+          <Route path={`/myAccount/MyProfileRegistration`} component={MyProfileRegistration}/> 
 
 
         </Switch>
