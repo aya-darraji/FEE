@@ -1,0 +1,63 @@
+/* NavBar.css */
+
+.sidebar {
+    width: 200px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #08020d, #5091ca);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  
+  .logo-image {
+    margin-left: 8px;
+  }
+  
+  .logo-image img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .menu-item {
+    text-align: left;
+    padding: 8px 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .menu-item.active {
+    font-weight: bold;
+  }
+  
+  .bottom-menu {
+    margin-top: auto;
+  }
+  
+  .bottom-menu-item {
+    display: flex;
+    align-items: center;
+    color: #949599;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  
+  .bottom-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }

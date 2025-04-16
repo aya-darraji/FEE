@@ -54,28 +54,16 @@ function MyProfileRegistration() {
       
       {/* Main Content */}
       <div className="main-content">
-        <div className="top-navbar">
-          <div className="navbar-icons">
-            <button className="navbar-icon">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-            </button>
-            <div className="user-profile">
-              <div className="avatar">U</div>
-              <span className="username">Username</span>
-            </div>
-          </div>
-        </div>       
+            
 
         {/* Password change form */}
         <div className="password-section">
-          <h2 className="section-title">Change Password</h2>
+          <h2 className="section-title"></h2>
           <form className="password-form" onSubmit={handlePasswordSubmit}>
             <div className="form-group">
               <input
-                type="password"
-                placeholder="Old Password"
+                type="String"
+                placeholder="Username"
                 name="oldPassword"
                 value={passwordData.oldPassword}
                 onChange={handlePasswordChange}
@@ -83,8 +71,8 @@ function MyProfileRegistration() {
             </div>
             <div className="form-group">
               <input
-                type="password"
-                placeholder="New Password"
+                type="int"
+                placeholder="phone"
                 name="newPassword"
                 value={passwordData.newPassword}
                 onChange={handlePasswordChange}
@@ -92,8 +80,8 @@ function MyProfileRegistration() {
             </div>
             <div className="form-group">
               <input
-                type="password"
-                placeholder="Repeat Password"
+                type="String"
+                placeholder="address"
                 name="repeatPassword"
                 value={passwordData.repeatPassword}
                 onChange={handlePasswordChange}
