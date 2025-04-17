@@ -1,0 +1,126 @@
+/* Main container layout */
+.car-information-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex: 1;
+    background-color: #4c4a5e;
+    color: white;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  /* Car Table Styles */
+  .car-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #4c4a5e;
+    border-radius: 4px;
+  }
+  
+  .car-table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+  }
+  
+  .car-table thead {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .car-table th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-right: 1px solid #eee;
+  }
+  
+  .car-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .car-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .car-table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .car-table td {
+    padding: 12px 16px;
+    color: white;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Action buttons styling */
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-btn {
+    background-color: #6a6a6a;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #c62828;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #808080;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Horizontal scrollbar styling for the table container */
+  .car-table-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .car-table-container::-webkit-scrollbar-track {
+    background: #383648;
+  }
+  
+  .car-table-container::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+  }
+  
+  .car-table-container::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 1200px) {
+    .action-buttons {
+      flex-direction: column;
+    }
+    
+    .edit-btn, .delete-btn {
+      width: 100%;
+      margin: 2px 0;
+    }
+  }
