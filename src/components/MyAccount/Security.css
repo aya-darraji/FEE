@@ -14,8 +14,76 @@
   color: white;
   font-family: Arial, sans-serif;
 }
-
-/* Main content styles */
+  
+/* Sidebar styles */
+.sidebar {
+  width: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+}
+ 
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+ 
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+ 
+.logo-image {
+  margin-left: 8px;
+}
+ 
+.logo-image img {
+  width: 24px;
+  height: 24px;
+}
+ 
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+ 
+.menu-item {
+  text-align: left;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+ 
+.menu-item.active {
+  font-weight: bold;
+}
+ 
+.bottom-menu {
+  margin-top: auto;
+}
+ 
+.bottom-menu-item {
+  display: flex;
+  align-items: center;
+  color:#949599;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+ 
+.bottom-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+ 
+/* Main content styles - MODIFIED TO CENTER CONTENT */
 .main-content {
   flex: 1;
   padding: 24px;
@@ -27,11 +95,58 @@
   align-items: center;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
 .main-content::-webkit-scrollbar {
   display: none;
 }
-
-/* Password form styles */
+ 
+.top-navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 32px;
+}
+ 
+.navbar-icons {
+  display: flex;
+  align-items: center;
+}
+ 
+.navbar-icon {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 16px;
+}
+ 
+.navbar-icon svg {
+  width: 24px;
+  height: 24px;
+}
+ 
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+ 
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+ 
+.username {
+  margin-left: 8px;
+  color: white;
+}
+ 
+/* Password form styles - MODIFIED FOR BETTER CENTERING */
 .password-form {
   width: 100%;
   max-width: 600px;
@@ -110,6 +225,7 @@
   transition: all 0.3s ease;
 }
 
+/* Button hover and active effects */
 .cancel-button:hover, .send-button:hover {
   opacity: 0.9;
   transform: translateY(-2px);

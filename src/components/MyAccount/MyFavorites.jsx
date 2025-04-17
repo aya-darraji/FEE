@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import '../../assets/images/login-bg.jpg';
 import './MyFavorites.css';
+import NavBar from './NavBar';
 
 function MyFavorites() {
-  // Sample favorite cars data - Tesla Model S removed
   const [favorites, setFavorites] = useState([
     { id: 2, name: 'BMW i8', rating: 5, image: '../../assets/images/car2.jpg' },
     { id: 3, name: 'Mercedes AMG GT', rating: 3, image: '../../assets/images/car3.jpg' }
@@ -15,7 +14,6 @@ function MyFavorites() {
     ));
   };
 
-  // Star rating component
   const StarRating = ({ rating, maxRating = 5, onRatingChange }) => {
     return (
       <div className="star-rating">
@@ -35,45 +33,13 @@ function MyFavorites() {
   };
 
   return (
-    <div className="security-container">
-      {/* Sidebar */}
-      <div className="sidebar">
-        <div className="logo-container">
-          <div className="logo-image">
-            <img src="../../assets/images/login-bg.jpg" alt="Logo" />
-          </div>
-        </div>
-        
-        <div className="menu-items">
-          <button className="menu-item">Dashboard</button>
-          <button className="menu-item">My Favorites</button>
-          <button className="menu-item">My Alerts</button>
-          <button className="menu-item">My Profile</button>
-          <button className="menu-item active">Security</button>
-          <button className="menu-item">Code QR</button>
-        </div>
-        
-        <div className="bottom-menu">
-          <div className="bottom-menu-item">
-            <svg className="bottom-icon" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V3zm2 1v10h10V4H5z" clipRule="evenodd" />
-              <path fillRule="evenodd" d="M10 9a1 1 0 01.7.3l3 3a1 1 0 01-1.4 1.4L11 12.4V15a1 1 0 01-2 0v-2.6l-1.3 1.3a1 1 0 01-1.4-1.4l3-3A1 1 0 0110 9z" clipRule="evenodd" />
-            </svg>
-            <span>Log out</span>
-          </div>
-         
-        </div>
-      </div>
+    <div className="favorites-container">
+     <NavBar activeItem="My Favorites" />
       
-      {/* Main Content */}
       <div className="main-content">
-     
-
-        {/* Content wrapper for centering */}
         <div className="content-wrapper">
           <h1 className="page-title">My Favorites</h1>
           
-          {/* Centered Favorites Grid */}
           <div className="favorites-center-container">
             <div className="favorites-grid">
               {favorites.map(car => (

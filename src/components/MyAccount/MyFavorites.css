@@ -1,269 +1,207 @@
-/* MyFavorites.css */
+/* MyFavorites.css - Version agrandie */
+
 .favorites-container {
     display: flex;
     height: 100vh;
     background: linear-gradient(135deg, #1a0029 0%, #4a0057 100%);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-  
-.sidebar {
-    width: 200px;
-    padding: 10px; /* Réduit de 16px */
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #3d4750, #6c757d);   
-}
-  
-.logo-container {
-    padding: 10px; /* Réduit de 15px */
-    margin-bottom: 10px; /* Réduit de 20px */
-    display: flex;
-    justify-content: center;
-}
-  
-.logo-image {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-  
-.logo-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-  
-.menu-items {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-top: 5px; /* Ajouté pour réduire l'espace après le logo */
-}
-  
-.menu-item {
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px 15px; /* Réduit de 15px 20px */
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-  
-.menu-item:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-  
-.menu-item.active {
-    background-color: rgba(255, 255, 255, 0.15);
-    font-weight: bold;
-}
-  
-.bottom-menu {
-    margin-top: auto;
-    padding: 15px; /* Réduit de 20px */
-}
-  
-.bottom-menu-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 0; /* Réduit de 10px 0 */
-    cursor: pointer;
-}
-  
-.bottom-icon {
-    width: 20px;
-    height: 20px;
-}
-  
+
 .main-content {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
 }
-  
-.top-navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 30px;
-}
-  
-.navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-  
-.navbar-icon {
-    background: none;
-    border: none;
-    color: white;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-  
-.user-profile {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-  
-.avatar {
-    width: 30px;
-    height: 30px;
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #4a0057;
-    font-weight: bold;
-}
-  
+
 .content-wrapper {
     flex: 1;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-  
+
 .page-title {
     color: #f0f0f0;
-    margin-bottom: 30px;
-    font-size: 28px;
+    margin-bottom: 40px;
+    font-size: 32px;
     text-align: center;
+    font-weight: 600;
 }
-  
-/* Center container for favorites */
+
 .favorites-center-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px; /* Augmenté de 800px à 1000px */
     margin: 0 auto;
 }
-  
+
 .favorites-grid {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px; /* Augmenté de 20px à 30px */
 }
-  
+
 .favorite-card {
     background: linear-gradient(to bottom, #4e3d5a, #6c757d);
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 20px; /* Augmenté de 15px à 20px */
+    padding: 30px; /* Augmenté de 20px à 30px */
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 150px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    height: 200px; /* Augmenté de 150px à 200px */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée */
     transition: transform 0.3s, box-shadow 0.3s;
 }
-  
+
 .favorite-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px); /* Effet de hover plus marqué */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
-  
+
 .car-details {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px; /* Augmenté de 15px à 20px */
+    flex: 1;
+    padding-right: 30px;
 }
-  
+
 .car-name {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px; /* Augmenté de 24px à 28px */
     font-weight: bold;
 }
-  
+
+.car-specs {
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .view-details-btn {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 12px 25px; /* Augmenté de 8px 15px à 12px 25px */
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 14px;
+    transition: all 0.3s;
+    font-size: 16px; /* Augmenté de 14px à 16px */
     width: fit-content;
+    font-weight: 500;
 }
-  
+
 .view-details-btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
-  
+
 .car-image {
-    width: 200px;
+    width: 300px; /* Augmenté de 200px à 300px */
     height: 100%;
     position: relative;
+    flex-shrink: 0;
 }
-  
+
 .car-image img {
     width: 100%;
     height: auto;
     object-fit: contain;
     position: absolute;
     left: 0;
-    bottom: -20px;
+    bottom: -30px; /* Ajusté pour l'image plus grande */
+    transition: transform 0.3s;
 }
-  
+
+.favorite-card:hover .car-image img {
+    transform: scale(1.05);
+}
+
 .favorite-info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 5px;
+    gap: 10px; /* Augmenté de 5px à 10px */
+    position: absolute;
+    right: 30px;
+    top: 30px;
 }
-  
-/* 5-star rating system */
+
 .star-rating {
     display: flex;
-    gap: 5px;
+    gap: 8px; /* Augmenté de 5px à 8px */
 }
-  
+
 .star {
-    width: 24px;
-    height: 24px;
+    width: 28px; /* Augmenté de 24px à 28px */
+    height: 28px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.5);
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
 }
-  
+
 .star:hover,
 .star.active {
     color: #ffcc00;
+    transform: scale(1.2);
 }
-  
+
 .star svg {
     width: 100%;
     height: 100%;
 }
-  
+
 .favorite-label {
-    font-size: 16px;
+    font-size: 18px; /* Augmenté de 16px à 18px */
     font-style: italic;
-    margin-top: 5px;
+    margin-top: 10px; /* Augmenté de 5px à 10px */
 }
-  
-/* Responsive adjustments */
+
+.price-tag {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+/* Version mobile */
 @media (max-width: 768px) {
+    .main-content,
+    .content-wrapper {
+        padding: 20px;
+    }
+    
+    .page-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
     .favorite-card {
         flex-direction: column;
         height: auto;
-        padding: 15px;
+        padding: 25px;
+    }
+    
+    .car-details {
+        padding-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
     }
     
     .car-image {
         width: 100%;
-        height: 120px;
-        margin: 10px 0;
+        height: 180px;
+        margin: 15px 0;
     }
     
     .car-image img {
@@ -272,7 +210,14 @@
     }
     
     .favorite-info {
-        align-items: center;
+        position: static;
+        align-items: flex-start;
         width: 100%;
+        margin-top: 15px;
+    }
+    
+    .view-details-btn {
+        width: 100%;
+        text-align: center;
     }
 }

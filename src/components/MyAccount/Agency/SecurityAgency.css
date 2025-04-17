@@ -16,21 +16,7 @@
 }
 
 /* Sidebar styles */
-.sidebar {
-  width: 220px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(to bottom, #4e3d5a, #6c757d);
-  position: fixed;
-  height: 100%;
-}
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40px;
-}
 
 .logo-image img {
   width: 40px;
@@ -38,12 +24,6 @@
   border-radius: 50%;
 }
 
-.sidebar-menu {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  gap: 15px;
-}
 
 .menu-item {
   text-align: left;
@@ -66,11 +46,7 @@
   font-weight: bold;
 }
 
-.sidebar-footer {
-  margin-top: auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+
 
 .user-info {
   display: flex;

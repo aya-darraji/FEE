@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex-grow: 1;
+    background-color: #4c4a5e;
+    padding: 20px;
+  }
+  
+  /* Agency Table Styles */
+  .agency-table-container {
+    overflow-x: auto;
+    background-color: #4c4a5e;
+  }
+  
+  .agency-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .agency-table thead {
+    background-color: white;
+  }
+  
+  .agency-table th {
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .agency-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .agency-table td {
+    padding: 16px;
+    color: white;
+  }
+  
+  .avatar-cell {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .avatar-cell img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .send-btn, .delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .send-btn {
+    background-color: #4e3d5a;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #c62828;
+    color: white;
+  }
+  
+  .empty-row td {
+    padding: 8px;
+  }
+  
+  /* Status indicator */
+  .status-indicator {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 16px;
+    background-color: #4e3d5a;
+    color: white;
+  }
+  
+  /* For colors shown in the original image */
+  .color-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .color-red {
+    background-color: red;
+  }
+  
+  .color-blue {
+    background-color:#4e3d5a;
+  }

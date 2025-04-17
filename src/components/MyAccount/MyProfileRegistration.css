@@ -1,4 +1,4 @@
-/* MyProfileRegistration.css - Version agrandie x1.5 */
+/* MyProfileRegistration.css - Version agrandie x1.75 */
 .profile-registration-container {
   display: flex;
   height: 100vh;
@@ -6,104 +6,60 @@
   background-color: #f5f5f5;
 }
 
-/* Sidebar styles (inchangé) */
+/* Sidebar styles */
 .sidebar {
-  width: 250px;
+  width: 437px; /* 250px * 1.75 */
   background: linear-gradient(to bottom, #3d4750, #6c757d);
   color: white;
-  padding: 20px;
+  padding: 35px; /* 20px * 1.75 */
   display: flex;
   flex-direction: column;
 }
 
 .logo-container {
-  margin-bottom: 30px;
+  margin-bottom: 52px; /* 30px * 1.75 */
   text-align: center;
 }
 
 .logo-container h2 {
   margin: 0;
-  font-size: 24px;
-  letter-spacing: 1px;
+  font-size: 42px; /* 24px * 1.75 */
+  letter-spacing: 1.75px; /* 1px * 1.75 */
 }
 
 .search-container {
-  margin-bottom: 30px;
+  margin-bottom: 52px; /* 30px * 1.75 */
 }
 
 .search-container input {
   width: 100%;
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 14px 21px; /* 8px 12px * 1.75 */
+  border-radius: 35px; /* 20px * 1.75 */
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
-}
-
-.search-container input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  font-size: 21px; /* Taille augmentée */
 }
 
 .user-info {
-  margin-bottom: 30px;
-  padding: 10px;
+  margin-bottom: 52px; /* 30px * 1.75 */
+  padding: 17px; /* 10px * 1.75 */
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
+  border-radius: 8.75px; /* 5px * 1.75 */
   text-align: center;
-}
-
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  font-size: 21px; /* Taille augmentée */
 }
 
 .menu-item {
-  background: none;
-  border: none;
-  color: white;
-  padding: 12px 15px;
-  text-align: left;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-radius: 5px;
-  margin-bottom: 5px;
+  padding: 21px 26px; /* 12px 15px * 1.75 */
+  font-size: 21px; /* Taille augmentée */
+  margin-bottom: 8.75px; /* 5px * 1.75 */
 }
 
-.menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.menu-item.active {
-  background-color: rgba(255, 255, 255, 0.15);
-  font-weight: bold;
-}
-
-.bottom-menu {
-  margin-top: auto;
-}
-
-.bottom-menu-item {
-  background: none;
-  border: none;
-  color: white;
-  padding: 10px;
-  text-align: left;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-  transition: background-color 0.3s;
-  border-radius: 5px;
-}
-
-.bottom-menu-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Main content styles - MODIFIED x1.5 */
+/* Main content styles - MODIFIED x1.75 */
 .main-content {
   flex: 1;
-  padding: 45px; /* 30px * 1.5 */
+  padding: 70px; /* 40px * 1.75 */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -111,142 +67,174 @@
 
 .page-title {
   color: #333;
-  margin-bottom: 45px; /* 30px * 1.5 */
-  font-size: 36px; /* 24px * 1.5 */
+  margin-bottom: 70px; /* 40px * 1.75 */
+  font-size: 49px; /* 28px * 1.75 */
   text-align: center;
 }
 
 .profile-form {
-  max-width: 750px; /* 500px * 1.5 */
+  max-width: 1312px; /* 750px * 1.75 */
   margin: 0 auto;
   background-color: white;
-  padding: 45px; /* 30px * 1.5 */
-  border-radius: 15px; /* 10px * 1.5 */
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); /* Ombre légèrement augmentée */
+  padding: 70px; /* 40px * 1.75 */
+  border-radius: 26px; /* 15px * 1.75 */
+  box-shadow: 0 5px 26px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
 .form-group {
-  margin-bottom: 30px; /* 20px * 1.5 */
+  margin-bottom: 52px; /* 30px * 1.75 */
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 12px; /* 8px * 1.5 */
+  margin-bottom: 21px; /* 12px * 1.75 */
   font-weight: bold;
   color: #555;
-  font-size: 18px; /* Taille augmentée pour les labels */
+  font-size: 28px; /* 16px * 1.75 */
 }
 
 .form-group input {
   width: 100%;
-  padding: 15px 22.5px; /* 10px 15px * 1.5 */
-  border: 1px solid #ddd;
-  border-radius: 7.5px; /* 5px * 1.5 */
-  font-size: 18px; /* 16px * 1.125 (légèrement moins que 1.5 pour garder une bonne lisibilité) */
-  height: 54px; /* Hauteur fixe ajoutée */
+  padding: 26px 39px; /* 15px 22.5px * 1.75 */
+  border: 1.75px solid #ddd;
+  border-radius: 13px; /* 7.5px * 1.75 */
+  font-size: 28px; /* 16px * 1.75 */
+  height: 94px; /* 54px * 1.75 */
 }
 
 .form-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 22.5px; /* 15px * 1.5 */
-  margin-top: 45px; /* 30px * 1.5 */
+  gap: 39px; /* 22.5px * 1.75 */
+  margin-top: 78px; /* 45px * 1.75 */
 }
 
-.cancel-btn {
-  padding: 15px 30px; /* 10px 20px * 1.5 */
-  background-color: #f0f0f0;
-  color: #333;
-  border: none;
-  border-radius: 7.5px; /* 5px * 1.5 */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 18px; /* Taille de police augmentée */
-}
-
-.cancel-btn:hover {
-  background-color: #e0e0e0;
-}
-
-.submit-btn {
-  padding: 15px 30px; /* 10px 20px * 1.5 */
-  background-color: #555;
-  color: white;
-  border: none;
-  border-radius: 7.5px; /* 5px * 1.5 */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-size: 18px; /* Taille de police augmentée */
-}
-
-.submit-btn:hover {
-  background-color: #3a0047;
+.cancel-btn, .submit-btn {
+  padding: 26px 52px; /* 15px 30px * 1.75 */
+  border-radius: 13px; /* 7.5px * 1.75 */
+  font-size: 28px; /* 16px * 1.75 */
 }
 
 /* Responsive design */
-@media (max-width: 992px) { /* Nouveau point de rupture */
+@media (max-width: 1600px) {
   .profile-form {
-      max-width: 650px;
-      padding: 35px;
+    max-width: 1150px;
+    padding: 60px;
   }
   
   .form-group input {
-      font-size: 16px;
-      padding: 12px 18px;
-      height: 48px;
-  }
-  
-  .form-group label {
-      font-size: 16px;
+    font-size: 24px;
+    padding: 22px 33px;
+    height: 82px;
   }
   
   .page-title {
-      font-size: 30px;
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .sidebar {
+    width: 380px;
+    padding: 30px;
+  }
+  
+  .profile-form {
+    max-width: 1000px;
+    padding: 50px;
+  }
+  
+  .form-group input {
+    height: 75px;
+    font-size: 22px;
+  }
+  
+  .form-group label {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile-registration-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .main-content {
+    padding: 50px;
+  }
+  
+  .profile-form {
+    padding: 50px;
+    max-width: 900px;
+  }
+  
+  .form-group input {
+    height: 70px;
+  }
+  
+  .page-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    padding: 40px;
+  }
+  
+  .profile-form {
+    padding: 40px;
+  }
+  
+  .form-group input {
+    font-size: 20px;
+    padding: 18px 27px;
+    height: 65px;
+  }
+  
+  .form-group label {
+    font-size: 22px;
+  }
+  
+  .page-title {
+    font-size: 34px;
   }
   
   .cancel-btn, .submit-btn {
-      font-size: 16px;
-      padding: 12px 24px;
+    font-size: 22px;
+    padding: 20px 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .profile-registration-container {
-      flex-direction: column;
-  }
-  
-  .sidebar {
-      width: 100%;
-      padding: 15px;
-  }
-  
   .main-content {
-      padding: 30px;
+    padding: 30px;
   }
   
   .profile-form {
-      padding: 30px;
-      max-width: 100%;
+    padding: 30px;
   }
   
   .form-group input {
-      font-size: 16px;
-      padding: 12px 15px;
-      height: 45px;
+    font-size: 18px;
+    padding: 15px 22px;
+    height: 60px;
   }
   
   .form-group label {
-      font-size: 16px;
+    font-size: 20px;
   }
   
   .page-title {
-      font-size: 28px;
-      margin-bottom: 30px;
+    font-size: 30px;
   }
   
   .cancel-btn, .submit-btn {
-      font-size: 16px;
-      padding: 12px 24px;
+    font-size: 20px;
+    padding: 18px 36px;
   }
 }

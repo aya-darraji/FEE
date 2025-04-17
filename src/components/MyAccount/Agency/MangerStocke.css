@@ -1,0 +1,152 @@
+/* Base Styles */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Styles */
+  .header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .header h2 {
+    color: #34495e;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-menu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-menu button {
+    padding: 8px 15px;
+    background-color: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .dashboard-menu button:hover {
+    background-color: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    box-shadow: 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Table Section */
+  .table-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: linear-gradient(to bottom, #4e3d5a, #6c757d);
+  }
+  
+  .table-section h3 {
+    color: #2c3e50;
+    box-shadow: 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: 500;
+  }
+  
+  .color-badge {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  
+  .status-badge.available {
+    background-color: #d4edda;
+    color: #6c757d;
+  }
+  
+  .status-badge.sold-out {
+    background-color: #f8d7da;
+    color: #4e3d5a;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  
+  .edit-btn {
+    background-color: #4e3d5a;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #3d4750; /* Couleur modifiée */
+    color: white;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #7f8c8d;
+    /* rgba(255, 255, 255, 0.2) */
+  }
+  
+  .username {
+    font-weight: 500;
+  }
+  
+  .logout {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .logout:hover {
+    text-decoration: underline;
+  }
+  
