@@ -26,7 +26,6 @@ const AgencyInformation = () => {
 
   const handleSend = (id) => {
     console.log("Envoyer à l'agence ID:", id);
-    // Logique pour envoyer à l'agence
   };
 
   const handleDelete = (id) => {
@@ -34,13 +33,22 @@ const AgencyInformation = () => {
     setAgencies(agencies.filter(agency => agency.id !== id));
   };
 
+  const handleCreateAgency = () => {
+    console.log("Créer une nouvelle agence");
+    // Logique pour créer une nouvelle agence
+  };
+
   return (
     <div className="app-container">
-      {/* Using the NavBarAgency component */}
       <NavBarAgency />
 
-      {/* Main Content */}
       <div className="main-content">
+        <div className="table-header">
+          <button className="create-agency-btn" onClick={handleCreateAgency}>
+            Create Agency
+          </button>
+        </div>
+        
         <div className="agency-table-container">
           <table className="agency-table">
             <thead>
@@ -79,7 +87,6 @@ const AgencyInformation = () => {
                   </td>
                 </tr>
               ))}
-              {/* Empty row for better visualization */}
               <tr className="empty-row">
                 <td></td>
                 <td></td>

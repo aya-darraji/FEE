@@ -54,7 +54,7 @@ function App() {
           <Route path={`/myAccount/Agency/MangerStocke`} component={MangerStocke} />
           <Route path={`/myAccount/Agency/EditMangerStocke`} component={EditMangerStocke} />
           <Route path={`/myAccount/Agency/DashboardAgency`} component={DashboardAgency} />
-          <Route path={`/myAccount/Agency/CarInformation`} component={CarInformation} />
+          <Route path={`/myAccount/Agencyatio/CarInformn`} component={CarInformation} />
           <Route path={`/myAccount/Agency/EditCarInformation`} component={EditCarInformation} />
           <Route path={`/myAccount/Agency/AgencyInformation`} component={AgencyInformation} />
           <Route path={`/myAccount/Agency/EditAgencyInformation`} component={EditAgencyInformation} />

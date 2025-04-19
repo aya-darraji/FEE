@@ -91,7 +91,6 @@ const EditCarInformation = () => {
       <NavBarAgency />
       
       <div className="form-container">
-        <h2>Edit Car Information</h2>
         
         <form onSubmit={handleSubmit}>
           <div className="form-grid">
@@ -651,15 +650,7 @@ const EditCarInformation = () => {
             />
           </div>
           
-          <div className="form-group full-width">
-            <label>QR Code</label>
-            <input 
-              type="text" 
-              name="qrCode" 
-              value={formData.qrCode} 
-              onChange={handleChange} 
-            />
-          </div>
+          
           
           <div className="form-buttons">
             <button type="button" className="cancel-button" onClick={handleCancel}>
