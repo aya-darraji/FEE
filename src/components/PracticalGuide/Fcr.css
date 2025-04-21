@@ -1,0 +1,99 @@
+.fcr-container {
+    display: flex;
+    background: linear-gradient(to bottom, #880e4f, #4a148c); /* Dark reddish-purple gradient */
+    min-height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .page-title {
+    color: #f06292; /* Pink title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .decree-info,
+  .tax-regimes,
+  .tax-table,
+  .required-conditions,
+  .deadline,
+  .procedure,
+  .driving-full-exemption {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  h3 {
+    color: #e91e63; /* Medium pink title */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  
+  p,
+  ul,
+  ol {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  
+  ol {
+    list-style-type: decimal;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  thead th {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #f8bbd0; /* Light pink for header text */
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  a {
+    color: #fce4ec; /* Very light pink for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .download-link {
+    color: #fce4ec;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .download-link:hover {
+    color: #fff;
+  }

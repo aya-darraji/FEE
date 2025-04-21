@@ -1,0 +1,69 @@
+.tips-container {
+    display: flex;
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    min-height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .page-title {
+    color: #fff; /* Light purple title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .tip-section {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .section-title {
+    color: #fff; /* Medium purple title */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .tip-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  thead th {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #f3e5f5; /* Lightest purple for header text */
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }

@@ -1,0 +1,106 @@
+.two-wheeled-vehicles-container {
+    display: flex;
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    min-height: 100vh;
+    color: #fff;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .page-title {
+    color: #ffffff; /* Yellow-like title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .license-category {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-title {
+    color: #ffffff; /* Light purple-pink title */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+  }
+  
+  .vehicles-concerned,
+  .minimum-age {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #eaebe0; /* Light yellow-green label */
+    margin-right: 5px;
+  }
+  
+  .value {
+    color: #fff;
+  }
+  
+  .validity-duration {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  thead th {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .equivalent-category {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+  
+  .equivalent-title {
+    color: #f6f6f6;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  
+  .equivalent-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f6f6f6;
+  }

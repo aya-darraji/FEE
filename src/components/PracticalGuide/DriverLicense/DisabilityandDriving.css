@@ -1,0 +1,61 @@
+.disability-driving-container {
+    display: flex;
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    min-height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .page-title {
+    color: #ffffff; /* Light indigo title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .disability-info,
+  .section {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .section-title {
+    color: #ffffff; /* Medium indigo title */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+  }
+  
+  .disability-info p,
+  .section p,
+  .conditions-list,
+  .required-documents-list {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  
+  .conditions-list {
+    list-style-type: decimal;
+  }
+  
+  .required-documents-list {
+    list-style-type: disc;
+  }
+  
+  .list-item-title {
+    font-weight: bold;
+    color: #ffffff; /* Lighter indigo */
+    display: block;
+    margin-bottom: 5px;
+  }

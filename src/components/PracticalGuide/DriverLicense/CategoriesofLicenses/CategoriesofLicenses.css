@@ -1,0 +1,109 @@
+.categories-of-licenses-container {
+    display: flex;
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    min-height: 100vh;
+    color: #fff; /* White text */
+  }
+  
+  .main-content {
+    flex: 2; /* Takes up more space than the navbar */
+    padding: 20px;
+  }
+  
+  .categories-title {
+    color: #e7e7e7; /* Orange title */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .different-types {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .different-types h3 {
+    color: #ecf0f1; /* Light text for the subtitle */
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fffffe;
+    padding-bottom: 10px;
+  }
+  
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  thead th {
+    background: linear-gradient(to bottom, #4e3d5a, #2b2828);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .restriction-validity {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .restriction-validity h3 {
+    color: #ecf0f1;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fff; /* Red border for emphasis */
+    padding-bottom: 10px;
+  }
+  
+  .restriction-validity p {
+    line-height: 1.6;
+  }
+  
+  .vehicle-types-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust gap as needed */
+    justify-content: center; /* Center the buttons */
+  }
+  
+  .vehicle-types-buttons button {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Adjust padding for size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    min-width: 160px; /* Minimum width to ensure similar size */
+    text-align: center;
+  }
+  
+  .vehicle-types-buttons button:hover {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+}
+  
+  /* Specific button styles to match the image */
+  .vehicle-types-buttons .two-wheeled { background: linear-gradient(to right, #949599, #555); }
+  .vehicle-types-buttons .private-cars { background: linear-gradient(to right, #949599, #555);; }
+  .vehicle-types-buttons .heavy-vehicles { background: linear-gradient(to right, #949599, #555);; }
+  .vehicle-types-buttons .buses { background: linear-gradient(to right, #949599, #555);; }
+  .vehicle-types-buttons .taxis { background: linear-gradient(to right, #949599, #555);}
+  .vehicle-types-buttons .agricultural { background: linear-gradient(to right, #a39b9b, #555);; }

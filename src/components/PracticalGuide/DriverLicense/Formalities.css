@@ -1,0 +1,73 @@
+.formalities-container {
+    display: flex;
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    min-height: 100vh;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .page-title {
+    color: #fff; /* Light blue title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  
+  .formalities-section {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .section-title {
+    color: #fff; /* Slightly lighter blue title */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .formalities-list,
+  .fees-list,
+  .conditions-list,
+  .sub-list {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+  }
+  
+  .list-item-title {
+    font-weight: bold;
+    color: #fff; /* Even lighter blue */
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .fee-title,
+  .condition-title,
+  .formalities-title,
+  .deadline-title,
+  .step-title,
+  .notes-title {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.2em;
+  }
+  
+  .important-note {
+    font-style: italic;
+    color: #e0f7fa; /* Very light blue */
+    margin-bottom: 10px;
+    display: block;
+  }

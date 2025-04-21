@@ -1,0 +1,151 @@
+/* DriverLicense.css */
+.driver-license-container {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e3d5a 0%, #5a4a66 50%, #6c757d 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 250px; /* Account for NavBarGuide width */
+    transition: margin 0.3s ease;
+  }
+  
+  .content h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .content h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #a78bfa, #6366f1);
+    border-radius: 3px;
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+    font-weight: 600;
+  }
+  
+  .card p {
+    flex-grow: 1;
+    margin-bottom: 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e9ecef;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  
+  .read-more-btn {
+    background: #4e3d5a;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .read-more-btn:hover {
+    background: linear-gradient(to bottom, #4e3d5a, #6c757d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .content {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .content {
+      margin-left: 0;
+      padding-top: 1rem;
+    }
+    
+    .cards-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .card {
+      padding: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      padding: 1rem;
+    }
+    
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .read-more-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }

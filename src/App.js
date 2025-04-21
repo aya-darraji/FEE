@@ -23,6 +23,27 @@ import EditCarInformation from './components/MyAccount/Agency/EditCarInformation
 import AgencyInformation from './components/MyAccount/Agency/AgencyInformation';
 import EditAgencyInformation from './components/MyAccount/Agency/EditAgencyInformation';
 
+import CustomsDuties from './components/PracticalGuide/CustomsDuties';
+import Fcr from './components/PracticalGuide/Fcr';
+import PracticalGuide from './components/PracticalGuide/PracticalGuide';
+
+import DriverLicense from './components/PracticalGuide/DriverLicense/DriverLicense';
+import DisabilityandDriving from './components/PracticalGuide/DriverLicense/DisabilityandDriving';
+import Formalities from './components/PracticalGuide/DriverLicense/Formalities';
+import OnlineRegistration from './components/PracticalGuide/DriverLicense/OnlineRegistration';
+import PracticalTest from './components/PracticalGuide/DriverLicense/PracticalTest';
+import PreparingYourApplicationFile from './components/PracticalGuide/DriverLicense/PreparingYourApplicationFile';
+import RoadSafety from './components/PracticalGuide/DriverLicense/RoadSafety';
+import TheoreticalTest from './components/PracticalGuide/DriverLicense/TheoreticalTest';
+import Tips from './components/PracticalGuide/DriverLicense/Tips';
+
+import AgriculturalVehicles from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/AgriculturalVehicles';
+import Buses from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/Buses';
+import CategoriesofLicenses from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/CategoriesofLicenses';
+import HeavyVehicles from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/HeavyVehicles';
+import PrivateCars from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/PrivateCars';
+import TaxisandRentalCars from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/TaxisandRentalCars';
+import TwoWheeledVehicles from './components/PracticalGuide/DriverLicense/CategoriesofLicenses/TwoWheeledVehicles';
 
 function App() {
 
@@ -54,10 +75,37 @@ function App() {
           <Route path={`/myAccount/Agency/MangerStocke`} component={MangerStocke} />
           <Route path={`/myAccount/Agency/EditMangerStocke`} component={EditMangerStocke} />
           <Route path={`/myAccount/Agency/DashboardAgency`} component={DashboardAgency} />
-          <Route path={`/myAccount/Agencyatio/CarInformn`} component={CarInformation} />
+          <Route path={`/myAccount/Agency/CarInformation`} component={CarInformation} />
           <Route path={`/myAccount/Agency/EditCarInformation`} component={EditCarInformation} />
           <Route path={`/myAccount/Agency/AgencyInformation`} component={AgencyInformation} />
           <Route path={`/myAccount/Agency/EditAgencyInformation`} component={EditAgencyInformation} />
+
+          <Route path={`/PracticalGuide/CustomsDuties`} component={CustomsDuties} />
+          <Route path={`/PracticalGuide/Fcr`} component={Fcr} />
+          <Route path={`/PracticalGuide/PracticalGuide`} component={PracticalGuide} />
+
+          <Route path={`/PracticalGuide/DriverLicense/DriverLicense`} component={DriverLicense} />
+          <Route path={`/PracticalGuide/DriverLicense/DisabilityandDriving`} component={DisabilityandDriving} />
+          <Route path={`/PracticalGuide/DriverLicense/Formalities`} component={Formalities} />
+          <Route path={`/PracticalGuide/DriverLicense/OnlineRegistration`} component={OnlineRegistration} />
+          <Route path={`/PracticalGuide/DriverLicense/PracticalTest`} component={PracticalTest} />
+          <Route path={`/PracticalGuide/DriverLicense/PreparingYourApplicationFile`} component={PreparingYourApplicationFile} />
+          <Route path={`/PracticalGuide/DriverLicense/RoadSafety`} component={RoadSafety} />
+          <Route path={`/PracticalGuide/DriverLicense/TheoreticalTest`} component={TheoreticalTest} />
+          <Route path={`/PracticalGuide/DriverLicense/Tips`} component={Tips} />
+
+
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/AgriculturalVehicles`} component={AgriculturalVehicles} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/Buses`} component={Buses} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/CategoriesofLicenses`} component={CategoriesofLicenses} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/HeavyVehicles`} component={HeavyVehicles} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/TaxisandRentalCars`} component={TaxisandRentalCars} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/PrivateCars`} component={PrivateCars} />
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/TwoWheeledVehicles`} component={TwoWheeledVehicles} />
+
+
+
+
 
 
 

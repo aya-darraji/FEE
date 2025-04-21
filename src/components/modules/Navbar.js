@@ -135,7 +135,9 @@ export default function Navbar() {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [openCare, setOpenCare] = React.useState(false);
   const [homeMenuOpen, setHomeMenuOpen] = React.useState(false);
+  const [practicalGuideMenuOpen, setPracticalGuideMenuOpen] = React.useState(false);
   const homeMenuRef = React.useRef(null);
+  const practicalGuideMenuRef = React.useRef(null);
 
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
@@ -153,6 +155,14 @@ export default function Navbar() {
 
   const handleHomeMenuLeave = () => {
     setHomeMenuOpen(false);
+  };
+
+  const handlePracticalGuideMenuEnter = () => {
+    setPracticalGuideMenuOpen(true);
+  };
+
+  const handlePracticalGuideMenuLeave = () => {
+    setPracticalGuideMenuOpen(false);
   };
 
   const mobileMenuId = "primary-search-account-menu-mobile";
@@ -192,7 +202,16 @@ export default function Navbar() {
         <MenuItem><p>Contact</p></MenuItem>
       </NavLink>
       <NavLink underline="none" to="/agency-services">
-        <MenuItem><p>Agency Services</p></MenuItem>
+        <MenuItem><p>Practical Guide</p></MenuItem>
+      </NavLink>
+      <NavLink underline="none" to="/customs-duties">
+        <MenuItem><p>Customs Duties</p></MenuItem>
+      </NavLink>
+      <NavLink underline="none" to="/fcr">
+        <MenuItem><p>FCR</p></MenuItem>
+      </NavLink>
+      <NavLink underline="none" to="/drivers-license">
+        <MenuItem><p>Driver's License</p></MenuItem>
       </NavLink>
       <NavLink underline="none" to="/login">
         <MenuItem><p>Login</p></MenuItem>
@@ -244,16 +263,16 @@ export default function Navbar() {
                         <ClickAwayListener onClickAway={handleHomeMenuLeave}>
                           <MenuList autoFocusItem={homeMenuOpen}>
                             <NavLink className={classes.dropdownItem} to="/search">
-                              <MenuItem>Recherche</MenuItem>
+                              <MenuItem> Search</MenuItem>
                             </NavLink>
                             <NavLink className={classes.dropdownItem} to="/brands">
-                              <MenuItem>Marques</MenuItem>
+                              <MenuItem>Brands</MenuItem>
                             </NavLink>
                             <NavLink className={classes.dropdownItem} to="/dealers">
-                              <MenuItem>Concessionnaires</MenuItem>
+                              <MenuItem>Dealers</MenuItem>
                             </NavLink>
                             <NavLink className={classes.dropdownItem} to="/comparator">
-                              <MenuItem>Comparateur</MenuItem>
+                              <MenuItem>Comparator </MenuItem>
                             </NavLink>
                           </MenuList>
                         </ClickAwayListener>
@@ -265,7 +284,49 @@ export default function Navbar() {
               <NavLink className={classes.navmenu} to="/Inventory"> Inventory </NavLink>
               <NavLink className={classes.navmenu} to="/About"> About </NavLink>
               <NavLink className={classes.navmenu} to="/Contact"> Contact </NavLink>
-              <NavLink className={classes.navmenu} to="/agency-services"> Agency Services </NavLink>
+              
+              <div 
+                className={classes.homeDropdown}
+                onMouseEnter={handlePracticalGuideMenuEnter}
+                onMouseLeave={handlePracticalGuideMenuLeave}
+                ref={practicalGuideMenuRef}
+              >
+                <NavLink className={classes.navmenu} to="/agency-services"> 
+                  Practical Guide
+                </NavLink>
+                <Popper
+                  open={practicalGuideMenuOpen}
+                  anchorEl={practicalGuideMenuRef.current}
+                  role={undefined}
+                  transition
+                  disablePortal
+                  placement="bottom-start"
+                >
+                  {({ TransitionProps }) => (
+                    <Grow
+                      {...TransitionProps}
+                      style={{ transformOrigin: 'top left' }}
+                    >
+                      <Paper className={classes.dropdownMenu}>
+                        <ClickAwayListener onClickAway={handlePracticalGuideMenuLeave}>
+                          <MenuList autoFocusItem={practicalGuideMenuOpen}>
+                            <NavLink className={classes.dropdownItem} to="/customs-duties">
+                              <MenuItem>Customs Duties</MenuItem>
+                            </NavLink>
+                            <NavLink className={classes.dropdownItem} to="/fcr">
+                              <MenuItem>FCR</MenuItem>
+                            </NavLink>
+                            <NavLink className={classes.dropdownItem} to="/drivers-license">
+                              <MenuItem>Driver's License</MenuItem>
+                            </NavLink>
+                          </MenuList>
+                        </ClickAwayListener>
+                      </Paper>
+                    </Grow>
+                  )}
+                </Popper>
+              </div>
+              
               <NavLink className={classes.navmenu} to="/security">My Account </NavLink>
 
               <NavLink className={`${classes.navmenu} ${classes.loginButton}`} to="/login"> Login </NavLink>
