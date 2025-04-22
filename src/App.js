@@ -95,9 +95,9 @@ function App() {
           <Route path={`/PracticalGuide/DriverLicense/Tips`} component={Tips} />
 
 
+          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/CategoriesofLicenses`} component={CategoriesofLicenses} />
           <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/AgriculturalVehicles`} component={AgriculturalVehicles} />
           <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/Buses`} component={Buses} />
-          <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/CategoriesofLicenses`} component={CategoriesofLicenses} />
           <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/HeavyVehicles`} component={HeavyVehicles} />
           <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/TaxisandRentalCars`} component={TaxisandRentalCars} />
           <Route path={`/PracticalGuide/DriverLicense/CategoriesofLicenses/PrivateCars`} component={PrivateCars} />

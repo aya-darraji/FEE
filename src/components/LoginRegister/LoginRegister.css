@@ -3,43 +3,31 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("../../assets/images/login-bg.jpg") center/cover no-repeat;
-  position: relative;
-}
-
-.login-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 150, 0.6) 0%, rgba(0, 0, 150, 0.3) 100%);
-  z-index: 1;
+  background: linear-gradient(135deg, #585c68 0%, #373a40 100%); /* Dark grey gradient background */
+  padding: 20px;
 }
 
 .login-form-wrapper {
   width: 100%;
-  max-width: 300px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 2;
+  max-width: 280px; /* Reduced max-width */
+  background-color: rgba(255, 255, 255, 0.05); /* Very light transparent background */
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 25px; /* Slightly reduced padding */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .login-icon {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Slightly reduced margin */
 }
 
 .user-icon {
-  width: 50px;
-  height: 50px;
-  background-color: #0a3d7c;
+  width: 50px; /* Reduced icon size */
+  height: 50px; /* Reduced icon size */
+  background-color: #4a5568; /* Darker grey icon background */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -47,15 +35,15 @@
 }
 
 .user-icon svg {
-  width: 25px;
-  height: 25px;
-  color: white;
+  width: 25px; /* Reduced svg size */
+  height: 25px; /* Reduced svg size */
+  color: #f7fafc; /* Light grey icon color */
 }
 
 .login-title {
   text-align: center;
-  color: white;
-  font-size: 18px;
+  color: #f7fafc;
+  font-size: 1.3em; /* Reduced font size */
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -63,21 +51,21 @@
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* Reduced gap */
 }
 
 .input-group {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-bottom: 5px;
+  align-items: center; /* Align icon and input in the same line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border */
+  padding-bottom: 8px; /* Reduced padding */
 }
 
 .input-icon {
-  color: white;
-  width: 18px;
-  height: 18px;
-  margin-right: 8px;
+  color: #f7fafc;
+  width: 18px; /* Reduced icon width */
+  height: 18px; /* Reduced icon height */
+  margin-right: 8px; /* Reduced right margin */
 }
 
 .input-icon svg {
@@ -88,39 +76,47 @@
 .input-group input {
   background: transparent;
   border: none;
-  color: white;
-  font-size: 14px;
-  padding: 8px 0;
+  color: #f7fafc;
+  font-size: 0.9em; /* Reduced font size */
+  padding: 8px 0; /* Reduced vertical padding */
   width: 100%;
   outline: none;
 }
 
 .input-group input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em; /* Reduced font size */
 }
 
 .form-options {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
-  color: white;
+  font-size: 0.8em; /* Reduced font size */
+  color: #ddd;
+  margin-top: 12px; /* Reduced margin */
 }
 
 .remember-me {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 5px; /* Reduced gap */
 }
 
 .remember-me input[type='checkbox'] {
-  accent-color: #0b468f;
+  accent-color: 4e3d5a; /* Example accent color */
+  width: 14px; /* Reduced checkbox size */
+  height: 14px; /* Reduced checkbox size */
+}
+
+.remember-me label {
+  font-size: 0.8em; /* Reduced label size */
 }
 
 .forgot-password {
-  color: white;
+  color: #ccc;
   text-decoration: none;
+  font-size: 0.8em; /* Reduced font size */
 }
 
 .forgot-password:hover {
@@ -128,36 +124,37 @@
 }
 
 .login-button {
-  background-color: #003366;
+  background-color: #ccc; /* Example button color */
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 3px;
-  font-size: 14px;
+  padding: 10px 15px; /* Reduced padding */
+  border-radius: 5px;
+  font-size: 0.9em; /* Reduced font size */
   font-weight: 500;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 20px; /* Reduced margin */
 }
 
 .login-button:hover {
-  background-color: #004080;
+  background-color: #ccc;
 }
 
 .login-button:disabled {
-  background-color: #666;
+  background-color: white;
   cursor: not-allowed;
 }
 
 .register-link {
   text-align: center;
   color: white;
-  font-size: 12px;
-  margin-top: 15px;
+  font-size: 0.8em; /* Reduced font size */
+  margin-top: 15px; /* Reduced margin */
 }
 
 .register-link a {
-  color: #4a90e2;
+  color: #ccc;
   text-decoration: none;
+  font-size: 0.8em; /* Reduced font size */
 }
 
 .register-link a:hover {
@@ -165,25 +162,35 @@
 }
 
 .error-message {
-  background-color: rgba(255, 0, 0, 0.2);
-  color: white;
-  padding: 8px;
-  border-radius: 3px;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
+  padding: 8px; /* Reduced padding */
+  border-radius: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.8em; /* Reduced font size */
+  margin-bottom: 10px; /* Reduced margin */
 }
 
 @media (max-width: 480px) {
   .login-form-wrapper {
-    max-width: 280px;
-    padding: 20px;
+    max-width: 260px; /* Further reduced max-width for smaller screens */
+    padding: 18px; /* Further reduced padding */
   }
-  
+
   .login-title {
-    font-size: 16px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
   }
-  
+
   .input-group input {
-    font-size: 13px;
+    font-size: 0.8em;
+  }
+
+  .form-options {
+    font-size: 0.7em;
+  }
+
+  .register-link {
+    font-size: 0.7em;
   }
 }

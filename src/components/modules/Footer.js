@@ -16,17 +16,17 @@ export default function Footer() {
    <Box bgcolor="primary.main" color="white">
     <Container maxWidth="lg">
      <Typography>
-      <Grid container spacing={10}>
+      <Grid container spacing={9}>
        <Grid item xs={1.5} sm={2}>
         <img src={logo} alt="OXUS" height="80" />
        </Grid>
-       <Grid item xs={12} sm={3}>
+       <Grid item xs={2} sm={2}>
         <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" mb={2}>
          Our Company
         </Box>
         <Box mb={1}>
          <Link variant="body2" color="inherit" href="/">
-          About Oxus Motors
+          About AutoVault Motors
          </Link>
         </Box>
         <Box mb={1}>
@@ -50,7 +50,36 @@ export default function Footer() {
          </Link>
         </Box>
        </Grid>
-       <Grid item xs={12} sm={3}>
+
+
+       <Grid item xs={2} sm={2}>
+        <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" mb={2}>
+        Practical Guide
+        </Box>
+        <Box mb={1}>
+         <Link variant="body2" color="inherit" href="/">
+         Practical Guide
+        </Link>
+        </Box>
+        <Box mb={1}>
+         <Link variant="body2" color="inherit" href="/">
+         Driver’s License         
+         </Link>
+        </Box>
+        <Box mb={1}>
+         <Link variant="body2" href="/" color="inherit">
+         FCR
+         </Link>
+        </Box>
+        <Box mb={1}>
+         <Link variant="body2" href="/" color="inherit">
+         Customs Duties        
+        </Link>
+        </Box>
+       </Grid>
+
+       
+       <Grid item xs={2} sm={2}>
         <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" mb={2}>
          Buying and Selling
         </Box>
@@ -80,7 +109,7 @@ export default function Footer() {
          </Link>
         </Box>
        </Grid>
-       <Grid item xs={12} sm={2}>
+       <Grid item xs={2} sm={2}>
         <Box fontWeight="fontWeightBold" fontSize="h6.fontSize" mb={2}>
          Find Help
         </Box>

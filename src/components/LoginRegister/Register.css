@@ -1,179 +1,412 @@
-.register-container {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 150, 0.6) 0%,
-    rgba(0, 0, 150, 0.3) 100%
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url("../../assets/images/login-bg.jpg") center/cover;
-  padding: 5px;
-}
 
-.register-form-wrapper {
-  width: 100%;
-  max-width: 220px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  padding: 12px 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(2px);
-}
 
 .register-icon {
-  margin-bottom: 6px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px; /* Further reduced margin */
 }
 
 .register-icon .user-icon {
-  display: inline-flex;
-  width: 28px;
-  height: 28px;
-  background-color: #605d90;
+  width: 32px; /* Further reduced icon size */
+  height: 32px; /* Further reduced icon size */
+  background-color: #4a5568; /* Darker grey icon background */
   border-radius: 50%;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .register-icon .user-icon svg {
-  width: 14px;
-  height: 14px;
-  color: white;
+  width: 16px; /* Further reduced svg size */
+  height: 16px; /* Further reduced svg size */
+  color: #f7fafc; /* Light grey icon color */
 }
+/* Register.css */
 
-.register-title {
-  text-align: center;
-  color: #605d90;
-  font-size: 13px;
-  margin: 6px 0 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+.register-container {
 
-.register-form {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.input-group {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #605d90;
-  padding-bottom: 3px;
-}
-
-.input-icon {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
-  color: #605d90;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
-.input-group input {
-  border: none;
-  font-size: 11px;
-  padding: 3px 0;
-  width: 100%;
-  outline: none;
-  background: transparent;
-  color: white; /* Texte saisi en blanc */
-}
-
-/* Placeholders en blanc */
-.input-group input::placeholder {
-  color: rgba(255, 255, 255, 0.8); /* Blanc à 80% d'opacité */
-  font-size: 11px;
-  position: relative;
-  top: 1px;
-}
-
-/* Style spécifique pour chaque placeholder si besoin */
-.input-group input[name="email"]::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.input-group input[name="password"]::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.input-group input[name="confirmPassword"]::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.input-group input[name="phone"]::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.input-group input[name="address"]::placeholder {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.role-selector {
-  margin: 8px 0;
-  font-size: 11px;
-  color: #605d90;
-}
-
-.role-options {
-  display: flex;
-  gap: 8px;
+  
   justify-content: center;
-}
-
-.role-option {
-  display: flex;
+  
   align-items: center;
-}
-
-.role-option input {
-  width: 10px;
-  height: 10px;
-  margin-right: 4px;
-  accent-color: #605d90;
-}
-
-.register-button {
-  background-color: #605d90;
-  color: white;
-  border: none;
-  padding: 6px;
-  font-size: 11px;
-  margin-top: 6px;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-.login-link {
-  text-align: center;
-  font-size: 10px;
-  margin-top: 8px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.error-message, 
-.success-message {
-  padding: 4px;
-  font-size: 10px;
-  margin: 4px 0;
-  text-align: center;
-  border-radius: 2px;
-}
-
-@media (max-width: 320px) {
-  .register-form-wrapper {
-    max-width: 200px;
-    padding: 10px 8px;
+  
+  min-height: 100vh;
+  
+  background: linear-gradient(135deg, #585c68 0%, #373a40 100%); /* Dark grey gradient background */
+  
+  padding: 10px; /* Slightly reduced container padding */
+  
   }
-}
+  
+  
+  
+  .register-form-wrapper {
+  
+  width: 100%;
+  
+  max-width: 280px; /* Further reduced max-width */
+  
+  background-color: rgba(255, 255, 255, 0.05); /* Very light transparent background */
+  
+  backdrop-filter: blur(10px);
+  
+  border-radius: 8px; /* Slightly reduced border-radius */
+  
+  padding: 15px; /* Further reduced form padding */
+  
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* Slightly adjusted shadow */
+  
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Slightly adjusted border */
+  
+  }
+  
+  
+  
+  .register-icon {
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  margin-bottom: 6px; /* Further reduced margin */
+  
+  }
+  
+  
+  
+  .register-icon .user-icon {
+  
+  width: 32px; /* Further reduced icon size */
+  
+  height: 32px; /* Further reduced icon size */
+  
+  background-color: #4a5568; /* Darker grey icon background */
+  
+  border-radius: 50%;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  }
+  
+  
+  
+  .register-icon .user-icon svg {
+  
+  width: 16px; /* Further reduced svg size */
+  
+  height: 16px; /* Further reduced svg size */
+  
+  color: #f7fafc; /* Light grey icon color */
+  
+  }
+  
+  
+  
+  .register-title {
+  
+  text-align: center;
+  
+  color: #f7fafc;
+  
+  font-size: 0.9em; /* Further reduced font size */
+  
+  margin-bottom: 10px; /* Further reduced margin */
+  
+  font-weight: 500;
+  
+  text-transform: uppercase;
+  
+  }
+  
+  
+  
+  .register-form {
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  gap: 6px; /* Further reduced gap */
+  
+  }
+  
+  
+  
+  .input-group {
+  
+   display: flex;
+  
+  flex-direction: column;
+  
+   margin-bottom: 0px; /* Remove default margin for all input groups */
+  
+  }
+  
+  
+  
+  .input-group label {
+  
+ color: #ddd;
+  
+ font-size: 0.6em; /* Further reduced label font size */
+  
+  margin-bottom: 1px;
+  
+  }
+  
+  
+  
+  .input-group input {
+  
+  background-color: rgba(255, 255, 255, 0.08); /* Slightly darker transparent background */
+  
+  border: none;
+
+  border-radius: 4px; /* Slightly reduced border-radius */
+
+  padding: 5px 7px; /* Further reduced input padding */
+  
+  color: #fff;
+  
+  font-size: 0.7em; /* Further reduced input font size */
+  
+  outline: none;
+  
+  height: 28px; /* Set a fixed height for all input fields */
+  
+  margin-bottom: 0px; /* Remove default margin for all input fields */
+  
+  }
+  
+  
+  
+  .input-group input::placeholder {
+  
+ color: rgba(255, 255, 255, 0.5); /* Slightly darker placeholder color */
+  
+  font-size: 0.7em;
+  
+  }
+  
+  
+  
+  .role-selector {
+  
+   margin-top: 4px; /* Further reduced margin */
+  
+  font-size: 0.6em;
+  
+  color: #ddd;
+  
+  }
+  
+  
+  
+  .role-options {
+  
+  display: flex;
+  
+gap: 15px; /* Further reduced gap */
+  
+  margin-top: 3px; /* Further reduced margin */
+  
+  }
+  
+  
+  
+  .role-option {
+  
+  display: flex;
+  
+ align-items: center;
+  
+  }
+  
+  
+  
+  .role-option input {
+  
+ width: 9px; /* Further reduced checkbox size */
+  
+  height: 9px; /* Further reduced checkbox size */
+  
+  margin-right: 2px;
+  
+  accent-color: #64b5f6; /* Example accent color */
+  
+  }
+  
+  
+  
+  .role-option label {
+  
+   font-size: 0.55em;
+  
+  }
+  
+  
+  
+  .register-button {
+  
+  background-color: #ccc; /* Slightly darker button color */
+  
+  color: white;
+  
+ border: none;
+  
+ padding: 6px 10px; /* Further reduced button padding */
+  
+ font-size: 0.7em; /* Further reduced button font size */
+  
+ margin-top: 10px; /* Further reduced margin */
+  
+ border-radius: 4px; /* Slightly reduced border-radius */
+  
+   cursor: pointer;
+  
+  height: 28px; /* Set the button height to match input fields */
+  
+  }
+  
+  
+  
+  .register-button:hover {
+  
+   background-color: #ccc;
+  
+  }
+  
+  
+  
+  .register-button:disabled {
+  
+   background-color: #777;
+  
+   cursor: not-allowed;
+  
+  }
+  
+  
+  
+  .login-link {
+  
+   text-align: center;
+  
+  font-size: 0.55em; /* Further reduced font size */
+  
+   margin-top: 6px; /* Further reduced margin */
+  
+   color: #ccc; /* Slightly darker link color */
+  
+  }
+  
+  
+  
+  .error-message,
+  
+  .success-message {
+  
+   padding: 4px; /* Further reduced padding */
+  
+   font-size: 0.55em; /* Further reduced font size */
+  
+   margin: 5px 0; /* Further reduced margin */
+  
+   text-align: center;
+  
+   border-radius: 4px; /* Slightly reduced border-radius */
+  
+  }
+  
+  
+  
+  .error-message {
+  
+   background-color: rgba(255, 0, 0, 0.08); /* Slightly darker error background */
+  
+  color: #ef5350; /* Slightly darker error color */
+  
+  }
+  
+  
+  
+  .success-message {
+  
+   background-color: rgba(0, 200, 83, 0.08); /* Slightly darker success background */
+  
+   color: #4caf50; /* Slightly darker success color */
+  
+  }
+  
+  
+  
+  @media (max-width: 480px) {
+  
+  .register-form-wrapper {
+  
+   max-width: 200px; /* Further reduced max-width for smaller screens */
+  
+  padding: 12px; /* Further reduced padding */
+  
+  }
+  
+  
+  
+  .register-title {
+  
+   font-size: 0.8em;
+  
+   margin-bottom: 8px;
+  
+ }
+  
+  
+  
+  .input-group label {
+  
+  font-size: 0.5em;
+  
+  }
+  
+  
+  
+   .input-group input {
+  
+   font-size: 0.6em;
+  
+   height: 24px;
+  
+  }
+  
+  
+  
+   .register-button {
+  
+  font-size: 0.6em;
+  
+   height: 24px;
+  
+   }
+  
+  
+  
+ .role-selector {
+  
+   font-size: 0.5em;
+
+   }
+  
+  
+  
+  .login-link {
+  
+   font-size: 0.5em;
+  
+  }
+  
+  }

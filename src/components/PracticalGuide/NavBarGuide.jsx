@@ -1,5 +1,5 @@
-// NavBarGuide.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './NavBarGuide.css';
 
 function NavBarGuide() {
@@ -26,19 +26,21 @@ function NavBarGuide() {
       </div>
       
       <div className="navbar-menu">
-        <div 
+        <Link 
+          to="/PracticalGuide/CustomsDuties"
           className={`navbar-item ${activeItem === 'practical-guide' ? 'active' : ''}`}
           onClick={() => handleItemClick('practical-guide')}
         >
           Customs Duties
-        </div>
+        </Link>
         
-        <div 
+        <Link 
+          to="/PracticalGuide/Fcr"
           className={`navbar-item ${activeItem === 'fcr' ? 'active' : ''}`}
           onClick={() => handleItemClick('fcr')}
         >
           FCR
-        </div>
+        </Link>
         
         <div 
           className={`navbar-item ${activeItem === 'drivers-license' ? 'active' : ''}`}
@@ -49,61 +51,69 @@ function NavBarGuide() {
         
         {expandedLicense && (
           <div className="navbar-subitems">
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/OnlineRegistration"
               className={`navbar-subitem ${activeItem === 'online-registration' ? 'active' : ''}`}
               onClick={() => handleItemClick('online-registration')}
             >
               Online Registration
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/PreparingYourApplicationFile"
               className={`navbar-subitem ${activeItem === 'preparing-application' ? 'active' : ''}`}
               onClick={() => handleItemClick('preparing-application')}
             >
               Preparing Your Application File
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/TheoreticalTest"
               className={`navbar-subitem ${activeItem === 'theoretical-test' ? 'active' : ''}`}
               onClick={() => handleItemClick('theoretical-test')}
             >
               Theoretical Test: Driving Theory Exam
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/PracticalTest"
               className={`navbar-subitem ${activeItem === 'practical-test' ? 'active' : ''}`}
               onClick={() => handleItemClick('practical-test')}
             >
               Practical Test: Driving Exam
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/DisabilityandDriving"
               className={`navbar-subitem ${activeItem === 'disability-driving' ? 'active' : ''}`}
               onClick={() => handleItemClick('disability-driving')}
             >
               Disability and Driving
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/RoadSafety"
               className={`navbar-subitem ${activeItem === 'road-safety' ? 'active' : ''}`}
               onClick={() => handleItemClick('road-safety')}
             >
               Road Safety
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/Tips"
               className={`navbar-subitem ${activeItem === 'tips' ? 'active' : ''}`}
               onClick={() => handleItemClick('tips')}
             >
               Tips
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/Formalities"
               className={`navbar-subitem ${activeItem === 'formalities' ? 'active' : ''}`}
               onClick={() => handleItemClick('formalities')}
             >
               Formalities
-            </div>
+            </Link>
           </div>
         )}
         
@@ -116,47 +126,53 @@ function NavBarGuide() {
         
         {expandedCategories && (
           <div className="license-categories">
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/TwoWheeledVehicles"
               className={`navbar-category-item ${activeItem === 'two-wheeled' ? 'active' : ''}`}
               onClick={() => handleItemClick('two-wheeled')}
             >
               Two-Wheeled Vehicles
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/PrivateCars"
               className={`navbar-category-item ${activeItem === 'private-cars' ? 'active' : ''}`}
               onClick={() => handleItemClick('private-cars')}
             >
               Private Cars
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/HeavyVehicles"
               className={`navbar-category-item ${activeItem === 'heavy-vehicles' ? 'active' : ''}`}
               onClick={() => handleItemClick('heavy-vehicles')}
             >
               Heavy Vehicles
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/Buses"
               className={`navbar-category-item ${activeItem === 'buses' ? 'active' : ''}`}
               onClick={() => handleItemClick('buses')}
             >
               Buses
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/TaxisandRentalCars"
               className={`navbar-category-item ${activeItem === 'taxis' ? 'active' : ''}`}
               onClick={() => handleItemClick('taxis')}
             >
               Taxis and Rental Cars
-            </div>
+            </Link>
             
-            <div 
+            <Link 
+              to="/PracticalGuide/DriverLicense/CategoriesofLicenses/AgriculturalVehicles"
               className={`navbar-category-item ${activeItem === 'agricultural' ? 'active' : ''}`}
               onClick={() => handleItemClick('agricultural')}
             >
               Agricultural Vehicles
-            </div>
+            </Link>
           </div>
         )}
       </div>

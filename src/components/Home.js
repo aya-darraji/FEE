@@ -142,7 +142,7 @@ export default function Home() {
             sx={styles.fadeInUp}
           >
             <br />
-            Find the car of your dreams in just a few clicks!
+            {/*Find the car of your dreams in just a few clicks!*/}
             <br />
             <br />
           </Typography>
@@ -157,10 +157,10 @@ export default function Home() {
               lineHeight: "1.8",
               marginTop: "8px",
             }}
-          >
-            Welcome to our online car sales platform your go-to destination to discover a wide range of new and used vehicles. Whether you're looking for a budget-friendly city car, a family SUV, or a luxury vehicle, we've got exactly what you need. Compare models, explore options, and contact sellers with ease.
+          >{/*Welcome to our online car sales platform your go-to destination to discover a wide range of new and used vehicles. Whether you're looking for a budget-friendly city car, a family SUV, or a luxury vehicle, we've got exactly what you need. Compare models, explore options, and contact sellers with ease.
             Our platform also allows agencies to easily showcase all their vehicles and simplify the sales process through a QR code system, providing quick access to all vehicle information.
-            Sell with confidence, thanks to reliable listings and personalized support every step of the way.
+            Sell with confidence, thanks to reliable listings and personalized support every step of the way. */}
+            
           </Typography>
         </Grid>
       </Grid>

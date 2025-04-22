@@ -4,8 +4,8 @@ import NavBar from './NavBar';
 
 function MyFavorites() {
   const [favorites, setFavorites] = useState([
-    { id: 2, name: 'BMW i8', rating: 5, image: '../../assets/images/car2.jpg' },
-    { id: 3, name: 'Mercedes AMG GT', rating: 3, image: '../../assets/images/car3.jpg' }
+    { id: 2, name: 'BMW i8', rating: 5, image: '/car2.png' },
+    { id: 3, name: 'Mercedes AMG GT', rating: 3, image: '/car3.png' }
   ]);
 
   const handleRatingChange = (id, newRating) => {
