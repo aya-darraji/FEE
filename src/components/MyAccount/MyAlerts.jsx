@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './MyAlerts.css';
 import NavBar from './NavBar';
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 function MyAlerts() {
   const [selectedMark, setSelectedMark] = useState('Mark');
@@ -9,6 +11,8 @@ function MyAlerts() {
   return (
     <div className="alerts-container">
      <NavBar activeItem="My Alerts" /> 
+     <Navbar />
+
       
       <div className="main-content">
         <div className="content-wrapper">
@@ -43,6 +47,7 @@ function MyAlerts() {
           </div>
         </div>
       </div>
+ 
     </div>
   );
 }

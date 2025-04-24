@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Security.css';
 import NavBar from './NavBar';
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 function Security() {
   const [oldPassword, setOldPassword] = useState('');
@@ -10,6 +12,8 @@ function Security() {
   return (
     <div className="security-container">
       {/* Utilisation du composant NavBar */}
+      <Navbar />
+
       <NavBar activeItem="Security" />
       
       {/* Main Content */}
@@ -51,6 +55,7 @@ function Security() {
           </div>
         </div>
       </div>
+  
     </div>
   );
 }

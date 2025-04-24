@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginRegister.css';
-// import loginImage from '../../assets/images/login-bg.jpg'; // Removed image import
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 const LoginRegister = () => {
   const [email, setEmail] = useState('');
@@ -53,8 +54,9 @@ const LoginRegister = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-form-wrapper">
+    <div className="login-container  w-full flex justify-center ">
+      <Navbar />
+      <div className="login-form-wrapper ">
         <div className="login-icon">
           <div className="user-icon">
             <svg
@@ -71,11 +73,10 @@ const LoginRegister = () => {
 
         <h1 className="login-title">CUSTOMER LOGIN</h1>
 
-        <form onSubmit={handleSubmit} className="login-form">
+        <form onSubmit={handleSubmit} className="login-form w-screen ">
           {error && <div className="error-message">{error}</div>}
 
           <div className="input-group">
-           
             <input
               type="email"
               placeholder="Email ID"
@@ -86,7 +87,6 @@ const LoginRegister = () => {
           </div>
 
           <div className="input-group">
-            
             <input
               type="password"
               placeholder="Password"
@@ -112,15 +112,17 @@ const LoginRegister = () => {
             </Link>
           </div>
 
-          <button type="submit" className="login-button" disabled={loading}>
+          <button type="submit" className="login-button w-full bg-red" disabled={loading}>
             {loading ? 'LOGGING IN...' : 'LOGIN'}
           </button>
 
           <div className="register-link">
             Don't have an account? <Link to="/register">Register now</Link>
           </div>
+
         </form>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './MyFavorites.css';
 import NavBar from './NavBar';
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 function MyFavorites() {
   const [favorites, setFavorites] = useState([
@@ -35,6 +37,8 @@ function MyFavorites() {
   return (
     <div className="favorites-container">
      <NavBar activeItem="My Favorites" />
+     <Navbar />
+
       
       <div className="main-content">
         <div className="content-wrapper">

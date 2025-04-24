@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Register.css';
 // import registerImage from '../../assets/images/login-bg.jpg'; // Removed image import
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -95,6 +97,8 @@ const Register = () => {
 
   return (
     <div className="register-container">
+            <Navbar />
+
       <div className="register-form-wrapper">
         <div className="register-icon">
           <div className="user-icon">
@@ -234,6 +238,8 @@ const Register = () => {
           </div>
         </form>
       </div>
+      <Footer />
+
     </div>
   );
 };

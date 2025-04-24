@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './DashboardRegistration.css';
 import NavBar from './NavBar';
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 function DashboardRegistration() {
   const [activePage, setActivePage] = useState('dashboard');
@@ -13,7 +15,8 @@ function DashboardRegistration() {
   return (
     <div className="dashboard-container">
       <NavBar activeItem={activePage} navigateTo={navigateTo} />
-      
+      <Navbar />
+
       <div className="main-content">
         <div className="top-bar">
           {/* Top bar content can be added here */}
@@ -69,6 +72,7 @@ function DashboardRegistration() {
           </div>
         </div>
       </div>
+     
     </div>
   );
 }

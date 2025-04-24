@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './MyProfileRegistration.css';
 import '../../assets/images/login-bg.jpg';
+import Navbar from '../modules/Navbar';
+import Footer from '../modules/Footer';
 
 function MyProfileRegistration() {
   const [passwordData, setPasswordData] = useState({
@@ -24,8 +26,11 @@ function MyProfileRegistration() {
 
   return (
     <div className="profile-registration-container">
+              <Navbar />    
+
       {/* Sidebar simplifiée comme dans la capture d'écran */}
       <div className="sidebar">
+      
         <div className="logo-container">
           <div className="logo-image">
             <img src="../../assets/images/login-bg.jpg" alt="Logo" />

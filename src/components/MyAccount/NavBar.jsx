@@ -1,9 +1,14 @@
 import React from 'react';
 import './NavBar.css';
+import { useHistory } from 'react-router-dom';
+
 
 function NavBar({ activeItem = 'Security' }) {
+  const history = useHistory();
+
   return (
     <div className="sidebar">
+
       <div className="logo-container">
         <div className="logo-image">
           <img src="../../assets/images/login-bg.jpg" alt="Logo" />
@@ -11,12 +16,12 @@ function NavBar({ activeItem = 'Security' }) {
       </div>
       
       <div className="menu-items">
-        <button className={`menu-item ${activeItem === 'Dashboard' ? 'active' : ''}`}>Dashboard</button>
-        <button className={`menu-item ${activeItem === 'My Favorites' ? 'active' : ''}`}>My Favorites</button>
-        <button className={`menu-item ${activeItem === 'My Alerts' ? 'active' : ''}`}>My Alerts</button>
-        <button className={`menu-item ${activeItem === 'My Profile' ? 'active' : ''}`}>My Profile</button>
-        <button className={`menu-item ${activeItem === 'Security' ? 'active' : ''}`}>Security</button>
-        <button className={`menu-item ${activeItem === 'Code QR' ? 'active' : ''}`}>Code QR</button>
+        <button onClick={() => history.push('/')} className={`menu-item ${activeItem === 'Dashboard' ? 'active' : ''}`}>Dashboard</button>
+        <button onClick={() => history.push('/')} className={`menu-item ${activeItem === 'My Favorites' ? 'active' : ''}`}>My Favorites</button>
+        <button onClick={() => history.push('/')} className={`menu-item ${activeItem === 'My Alerts' ? 'active' : ''}`}>My Alerts</button>
+        <button onClick={() => history.push('/')} className={`menu-item ${activeItem === 'My Profile' ? 'active' : ''}`}>My Profile</button>
+        <button onClick={() => history.push('/myAccount/security')} className={`menu-item ${activeItem === 'Security' ? 'active' : ''}`}>Security</button>
+        <button onClick={() => history.push('/')} className={`menu-item ${activeItem === 'Code QR' ? 'active' : ''}`}>Code QR</button>
       </div>
       
       <div className="bottom-menu">
@@ -28,6 +33,7 @@ function NavBar({ activeItem = 'Security' }) {
           <span>Log out</span>
         </div>
       </div>
+    
     </div>
   );
 }
