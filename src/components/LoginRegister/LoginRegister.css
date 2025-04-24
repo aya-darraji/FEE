@@ -1,196 +1,128 @@
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color:#3c4252;
+
+}
+
 .login-container {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #585c68 0%, #373a40 100%); /* Dark grey gradient background */
+  background-color: #3c4252;
+  padding: 15px;
+  margin-top: 130px;
+  margin-bottom: 80px;
+}
+
+.login-form {
+  background-color: rgba(60, 66, 82, 0.8);
+  border-radius: 6px;
   padding: 20px;
-}
-
-.login-form-wrapper {
   width: 100%;
-  max-width: 280px; /* Reduced max-width */
-  background-color: rgba(255, 255, 255, 0.05); /* Very light transparent background */
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 25px; /* Slightly reduced padding */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.login-icon {
+.user-icon-container {
   display: flex;
-  justify-content: center;
-  margin-bottom: 15px; /* Slightly reduced margin */
+  justify-content: center; /* توسيط الأيقونة أفقياً */
+  margin-bottom: 15px; /* إضافة بعض المسافة أسفل الحاوية */
 }
 
 .user-icon {
-  width: 50px; /* Reduced icon size */
-  height: 50px; /* Reduced icon size */
-  background-color: #4a5568; /* Darker grey icon background */
+  width: 70px; /* تكبير العرض (40px * 1.75) */
+  height: 70px; /* تكبير الارتفاع (40px * 1.75) */
+  background-color: #4a5568;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* لا حاجة لتحديد الهامش هنا، تم التعامل معه في الحاوية */
 }
 
 .user-icon svg {
-  width: 25px; /* Reduced svg size */
-  height: 25px; /* Reduced svg size */
-  color: #f7fafc; /* Light grey icon color */
+  width: 35px; /* تكبير العرض (20px * 1.75) */
+  height: 35px; /* تكبير الارتفاع (20px * 1.75) */
+  color: #f7fafc;
 }
 
-.login-title {
-  text-align: center;
-  color: #f7fafc;
-  font-size: 1.3em; /* Reduced font size */
+.login-form h2 {
   margin-bottom: 20px;
   font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 }
 
-.login-form {
+.input-field {
+  padding: 10.5px; /* تكبير الحشو (6px * 1.75 تقريباً) */
+  font-size: 14px; /* قد تحتاج إلى تكبير حجم الخط قليلاً ليناسب الحقول الأكبر */
+}
+
+.form-check {
   display: flex;
-  flex-direction: column;
-  gap: 15px; /* Reduced gap */
-}
-
-.input-group {
-  display: flex;
-  align-items: center; /* Align icon and input in the same line */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border */
-  padding-bottom: 8px; /* Reduced padding */
-}
-
-.input-icon {
-  color: #f7fafc;
-  width: 18px; /* Reduced icon width */
-  height: 18px; /* Reduced icon height */
-  margin-right: 8px; /* Reduced right margin */
-}
-
-.input-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.input-group input {
-  background: transparent;
-  border: none;
-  color: #f7fafc;
-  font-size: 0.9em; /* Reduced font size */
-  padding: 8px 0; /* Reduced vertical padding */
-  width: 100%;
-  outline: none;
-}
-
-.input-group input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9em; /* Reduced font size */
-}
-
-.form-options {
-  display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0.8em; /* Reduced font size */
-  color: #ddd;
-  margin-top: 12px; /* Reduced margin */
+  margin-bottom: 15px;
+  font-size: 13px;
 }
 
-.remember-me {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Reduced gap */
+.form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
 }
 
-.remember-me input[type='checkbox'] {
-  accent-color: 4e3d5a; /* Example accent color */
-  width: 14px; /* Reduced checkbox size */
-  height: 14px; /* Reduced checkbox size */
-}
-
-.remember-me label {
-  font-size: 0.8em; /* Reduced label size */
+.form-check-label {
+  margin-left: 0.5em;
 }
 
 .forgot-password {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.8em; /* Reduced font size */
-}
-
-.forgot-password:hover {
+  color: #fff;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .login-button {
-  background-color: #ccc; /* Example button color */
-  color: white;
+  width: 100%;
+  padding: 14px; /* تكبير الحشو (8px * 1.75) */
+  background-color: #d3d3d3;
   border: none;
-  padding: 10px 15px; /* Reduced padding */
-  border-radius: 5px;
-  font-size: 0.9em; /* Reduced font size */
-  font-weight: 500;
+  border-radius: 3px;
+  color: #333;
+  font-weight: bold;
   cursor: pointer;
-  margin-top: 20px; /* Reduced margin */
+  transition: background-color 0.3s;
+  font-size: 14px; /* تكبير حجم الخط */
+  margin-top: 12px;
 }
 
 .login-button:hover {
-  background-color: #ccc;
-}
-
-.login-button:disabled {
-  background-color: white;
-  cursor: not-allowed;
+  background-color: #bababa;
 }
 
 .register-link {
-  text-align: center;
-  color: white;
-  font-size: 0.8em; /* Reduced font size */
-  margin-top: 15px; /* Reduced margin */
+  margin-top: 18px;
+  font-size: 13px;
 }
 
 .register-link a {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.8em; /* Reduced font size */
-}
-
-.register-link a:hover {
+  color: #fff;
   text-decoration: underline;
-}
-
-.error-message {
-  background-color: rgba(255, 0, 0, 0.1);
-  color: #ff4d4d;
-  padding: 8px; /* Reduced padding */
-  border-radius: 5px;
-  text-align: center;
-  font-size: 0.8em; /* Reduced font size */
-  margin-bottom: 10px; /* Reduced margin */
-}
-
-@media (max-width: 480px) {
-  .login-form-wrapper {
-    max-width: 260px; /* Further reduced max-width for smaller screens */
-    padding: 18px; /* Further reduced padding */
-  }
-
-  .login-title {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-  }
-
-  .input-group input {
-    font-size: 0.8em;
-  }
-
-  .form-options {
-    font-size: 0.7em;
-  }
-
-  .register-link {
-    font-size: 0.7em;
-  }
 }
